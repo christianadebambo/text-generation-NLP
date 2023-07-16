@@ -1,25 +1,40 @@
-# Text Generation NLP
+# Text Generation with Markov Chains
 
-Generate text by applying Markov Chains
+This repository contains code for generating text using Markov Chains. The idea behind Markov Chains is to predict the next possible word based on the N previous words. By analyzing a given text corpus, the code generates new text that resembles the style and patterns of the original text.
 
 Dataset taken from [Project Gutenberg](https://www.gutenberg.org/ebooks/1184)
 
-## Project structure
+## Prerequisites
 
-The project has the following structure:
-- `notebook/`: `.ipynb` Colab-friendly notebook with experiment
-- `input/`: input data
+Before running the code, ensure that you have the following libraries installed:
 
-## Working with the repo
+- random
+- re
+- collections
+- nltk
 
-### Environment
+## Code Explanation
 
-To work with the repo, I recommend creating a virtual environment:
-```
-python3 -m venv myenv
-source myenv/bin/activate
-```
+The code performs the following steps:
 
-### Reproducing solution
+- Imports the necessary libraries for randomization, regular expressions, counting, and natural language processing.
+- Defines functions for reading a text file, collecting word pairs from the corpus, and generating text using Markov Chains.
+- Reads the text corpus from a file and performs text cleaning operations.
+- Collects word pairs from the text corpus to create a Markov chain dictionary.
+- Generates text using the Markov chain dictionary.
+- Prints the generated text.
+- Provides options for higher-order Markov Chains and backoff.
 
-The solution can be reproduced by running the Jupyter notebook
+## Results
+
+The code generates text based on the provided text corpus and the selected Markov chain approach. It prints the generated text, which resembles the style and patterns of the original text.
+
+## Instructions
+
+To run the project code, follow these steps:
+
+- Download the dataset.
+- Install the required dependencies mentioned in the Prerequisites section.
+- Run the code in a Python environment that supports Jupyter notebooks or execute the code in a Python script.
+
+Note: Adjustments may be required in the code paths to ensure proper loading of the dataset.
